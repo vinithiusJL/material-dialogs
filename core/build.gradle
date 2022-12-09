@@ -49,3 +49,22 @@ artifacts {
     archives sourcesJar
     archives javadocJar
 }
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'material-dialogs-androidx'
+
+    publishedGroupId = 'com.github.vinithiusJL'
+    libraryName = 'Material Dialogs AndroidX'
+    artifact = 'material-dialogs'
+
+    libraryDescription = 'Provides material dialog androidX from '
+
+    siteUrl = 'https://github.com/vinithiusJL/material-dialogs'
+    gitUrl = 'https://github.com/vinithiusJL/material-dialogs.git'
+
+    libraryVersion = '0.8.5.3'
+
+}
+
+group = publishedGroupId
