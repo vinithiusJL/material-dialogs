@@ -2,7 +2,7 @@ package com.afollestad.materialdialogssample;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.support.annotation.ArrayRes;
+import androidx.annotation.ArrayRes;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;

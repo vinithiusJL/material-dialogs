@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 32
     buildToolsVersion "23.0.2"
 
     signingConfigs {
@@ -15,8 +15,8 @@ android {
 
     defaultConfig {
         applicationId "com.afollestad.materialdialogssample"
-        minSdkVersion 9
-        targetSdkVersion 23
+        minSdkVersion 26
+        targetSdkVersion 31
         versionCode 158
         versionName "0.8.5.6"
     }
@@ -37,8 +37,9 @@ android {
 }
 
 dependencies {
-    compile project(':core')
-    compile project(':commons')
-    compile 'com.android.support:gridlayout-v7:23.2.0'
-    compile 'com.jakewharton:butterknife:7.0.1'
+    implementation project(':core')
+    implementation project(':commons')
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    annotationProcessor 'com.jakewharton:butterknife:7.0.1'
 }
